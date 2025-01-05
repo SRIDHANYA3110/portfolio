@@ -1,0 +1,438 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+nav{
+    width: 100%;
+    position: sticky !important;
+    left: 0;
+    top: 0;
+    color:#FFF1DB;
+    z-index: 10;
+}
+.navbar-brand{
+    font-weight: 600;
+}
+.nav-link{
+    color: white !important;
+    border-bottom: 1px solid transparent;
+}
+.nav-link:hover{
+    border-bottom: 1px solid white;
+}
+
+section{
+    width: 100%;
+    min-height: 100vh;
+}
+
+
+
+/*----Home section-----*/
+
+
+#home{
+    width: 100%;
+    height: 100vh;
+    background:#EF5A6F;
+    /*background-size: cover;*/
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    color: #FFF1DB;
+    flex-direction: column;
+}
+
+#home p{
+    position: absolute;
+    top: 50%;
+    font-size: 100px;
+}
+  /*  opacity: 0;
+    animation: text 3s ease-in-out;
+}
+
+#home p:nth-child(1){
+    animation-delay: 0s;
+}
+#home p:nth-child(2){
+    animation-delay: 3s;
+}
+@keyframes text{
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}*/
+
+#home span{
+    color: #54a5b5;
+}
+@media screen and (max-width:576px){
+    #home p{
+        font-size: 60px;
+        top: 50%;
+    }
+}
+
+
+
+
+
+/*-----about----*/
+
+#about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #EF5A6F;
+}
+
+.circle{
+    width: 400px;
+    height: 400px;
+    background:#54a5b5;
+    border-radius: 50%;
+    position: relative;
+    box-shadow: 0px 5px 12px rgba(0,0,0,.7);
+    margin-bottom: 3%;
+    margin-top: 8%;
+    transition: 1s;
+}
+.circle img{
+    position: absolute;
+    height: 357px;
+    align-items: center;
+    justify-content: center;
+    right: -20%;
+    top: -4%;
+    border-radius: 50%;
+    filter: drop-shadow(0px 30px 15px rgba(0,0,0,.4));
+    transition: 1s;
+
+
+
+}
+
+.circle:hover{
+    width: 800px;
+    height: 400px;
+    border-radius: 10px;
+    transition: 1s;
+}
+
+
+.circle:hover img{
+    position: absolute;
+    top: 0%;
+    right: -13%;
+    transition: 1s;
+}
+.circle:hover .content{
+    position: absolute;
+    top: 15%;
+    left: 7%;
+    right: 10%;
+    color: FFF1DB;
+    width: 50%;
+    opacity: 1;
+    transition: 1s;
+}
+.circle .content{
+    opacity: 0;
+}
+.circle:hover .content h2{
+    color: #EF5A6F;
+}
+
+
+@media screen and (max-width:576px) {
+    .circle{
+        width: 400px;
+        height: 400px;
+        background:#29367d;
+        border-radius: 50%;
+        position: relative;
+        box-shadow: 0px 5px 12px rgba(0,0,0,.7);
+        margin-bottom: 3%;
+        margin-top: 8%;
+        transition: 1s;
+}
+.circle img{
+    position: absolute;
+    height: 357px;
+    align-items: center;
+    justify-content: center;
+    right: -20%;
+    top: -4%;
+    border-radius: 50%;
+    filter: drop-shadow(0px 30px 15px rgba(0,0,0,.4));
+    transition: 1s;
+}
+.circle:hover{
+    width: 400px;
+    height: 650px;
+    border-radius: 10px;
+    transition: 1s;
+}
+.circle:hover .content{
+    position: absolute;
+    top: 59%;
+    left: 0%;
+    right: 10%;
+    color: white;
+    width: 100%;
+    padding: 15px;
+    opacity: 1;
+    transition: 1s;
+}
+.circle .content{
+    opacity: 0;
+}
+}
+
+
+/*-----skills----*/
+
+#skills{
+    padding-top: 5%;
+    background: #EF5A6F;
+}
+#skills h1{
+  color:  #FFF1DB ;
+}
+#skills .container{
+    margin-top: 6%;
+    margin-bottom: 6%;
+    color: #54a5b5;
+}
+label{
+    font-size: 20px;
+    color: #FFF1DB;
+}
+.progress{
+    height: 30px !important;
+    box-shadow: 2px 4px 5px gray,-2px -2px 5px white;
+}
+.progress:hover{
+    box-shadow: 2px 4px 5px white,-2px -2px 5px gray;
+}
+
+/*project*/
+#projects{
+    padding-top: 0%;
+    background:  #EF5A6F;
+    display: flex;
+}
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+  }
+  .project {
+    margin-bottom: 50px;
+  }
+  .project-title {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: "Poppins", sans-serif;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    color:  #FFF1DB;
+    text-align: center;
+  }
+  .project-description {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  /*.project-links a {
+    display: flex;
+    justify-content: center;
+    width: 50px;
+    text-decoration: none;
+    color: (##2A9D8F);
+    background-color:rgb(134, 13, 226);
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+   
+  }*/
+  /*.project-links {
+    display: flex;
+    justify-content: center;
+    gap: 100px; 
+}
+.project-links a {
+    color:rgb(134, 13, 226);
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    transition: color 0.3s;
+    font-size: 40px;
+}*/
+.container h1{
+    text-align: center;
+    color:rgb(134, 13, 226);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-family:"Poppins", sans-serif;
+    font-weight: bolder;
+    margin-bottom: 30px;
+    
+    
+}
+  .project-links a:hover {
+   color:rgb(69, 69, 207);
+  }
+
+  @media screen and (max-width:576px) {
+    #projects{
+      background-color:rgb(33,37,41);
+      height: 100%;
+    }
+  }
+
+.hover {
+  color: white;
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+  position: absolute;
+  top: 95%;
+  margin-top: 6px;
+  display: none; 
+  font-size: 25px;
+  font-weight: bolder;
+  letter-spacing: 1px;
+  
+  
+}
+
+
+@media only screen and (min-width: 600px) {
+  .hover {
+    display: block; 
+  }
+}
+.hover:hover {
+  display: block; 
+}
+
+
+/*-----resume----*/
+
+
+
+#resume{
+    padding: 5%;
+    background: #2A9D8F;
+}
+#resume h1{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 40px;
+    color: burlywood;
+}
+
+.download-button { 
+    
+    display: flex; 
+    padding: 10px 20px;
+    font-size: 16px; 
+    text-align: center; 
+    color: white;
+    background-color: #007bff;
+    text-decoration: none;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+     }
+    
+.download-button:hover { 
+    background-color: #0056b3; 
+}
+
+
+
+.contact-links {
+    display: flex;
+    justify-content: space-around; /* Adjusts spacing between icons */
+    align-items: center;
+}
+
+.contact-links a {
+    margin: 10px; /* Optional: Adds spacing between each icon */
+    font-size: 24px; /* Adjust the icon size if needed */
+    color: burlywood; /* Your preferred color */
+    text-decoration: none;
+    justify-content: center;
+    margin-left: 50px;
+    
+}
+
+.contact-links a:hover {
+    color: #0513d3; /* Optional: Change color on hover */
+    justify-content: center;
+}
+
+@media only screen and (min-width: 600px) {
+    #resume{
+        padding: 5%;
+        background: #EF5A6F;
+    }
+    #resume h1{
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: 40px;
+        color: #FFF1DB;
+    }
+    
+    .download-button { 
+        
+        display: flex; 
+        padding: 10px 20px;
+        font-size: 16px; 
+        text-align: center; 
+        color: white;
+        background-color: #007bff;
+        text-decoration: none;
+        border-radius: 5px;
+        justify-content: center;
+        align-items: center;
+         }
+        
+    .download-button:hover { 
+        background-color: #0056b3; 
+    }
+    
+    
+    
+    .contact-links {
+        display: flex;
+        justify-content: space-around; /* Adjusts spacing between icons */
+        align-items: center;
+    }
+    
+    .contact-links a {
+        margin: 40px; /* Optional: Adds spacing between each icon */
+        font-size: 24px; /* Adjust the icon size if needed */
+        color: burlywood; /* Your preferred color */
+        text-decoration: none;
+        justify-content: center;
+        margin-left: 50px;
+        
+    }
+    
+    .contact-links a:hover {
+        color: #0513d3; /* Optional: Change color on hover */
+        justify-content: center;
+    }
+    
+}
+
+
